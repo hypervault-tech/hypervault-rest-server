@@ -26,7 +26,7 @@ To build and bring up (2), follow the following steps.
 To build the docker image, simply run 
 
 ```
-docker build -t hypervault/rest-server .
+sudo docker build -t hypervault/rest-server .
 ```
 
 where the image name is `hypervault/rest-server`.
