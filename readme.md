@@ -64,3 +64,6 @@ sudo docker ps |grep hypervaultrest
 sudo docker logs hypervaultrest
 ```
 
+### Server restart script
+
+All of the above steps are encapsulated in the script `restartRESTserver.sh` which additionally kills and removes the docker containers first. This script should be run as `sudo`. 
