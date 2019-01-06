@@ -34,7 +34,7 @@ where the image name is `hypervault/rest-server`.
 Environment variables used by the image are defined in `env` and next load them with 
 
 ```
-source env
+source .env
 ```
 
 Finally, bring up the docker container by 
