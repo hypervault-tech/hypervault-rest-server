@@ -64,6 +64,16 @@ sudo docker ps |grep hypervaultrest
 sudo docker logs hypervaultrest
 ```
 
+If everything goes well, the log should say something like 
+
+```
+........
+Web server listening at: http://localhost:3000
+Browse your REST API at http://localhost:3000/explorer
+```
+
+Note that it says the port is 3000, which is mapped to the port `3019` on the host machine. 
+
 ### Server restart script
 
 All of the above steps are encapsulated in the script `restartRESTserver.sh` which additionally kills and removes the docker containers first. This script should be run as `sudo`. 
