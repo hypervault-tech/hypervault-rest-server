@@ -51,7 +51,7 @@ sudo docker run \
 -v ~/.composer:/home/composer/.composer \
 --name hypervaultrest \
 --network composer_default \
--p 3018:3000 \
+-p 3019:3000 \
 hypervault/rest-server
 ```
 
