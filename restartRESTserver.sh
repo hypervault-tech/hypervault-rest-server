@@ -27,3 +27,4 @@ sudo docker run \
 hypervault/rest-server
 
 echo "Server should now be listening on port 3019"
+echo "Run 'sudo docker logs hypervaultrest' to see the logs. "
