@@ -2,7 +2,7 @@
 
 This is based on https://hyperledger.github.io/composer/latest/tutorials/google_oauth2_rest 
 
-This is a multi-user REST Server that is used to interact with the Hypervault blockchain network. This server uses the port `3019` and it is exposed at http://hypervault.tech:3019/
+This is a multi-user REST Server that is used to interact with the Hypervault blockchain network. This server uses the port `2019` and it is exposed at http://hypervault.tech:2019/
 
 ## Bringing up the server
 
@@ -51,7 +51,7 @@ sudo docker run \
 -v ~/.composer:/home/composer/.composer \
 --name hypervaultrest \
 --network composer_default \
--p 3019:3000 \
+-p 2019:3000 \
 hypervault/rest-server
 ```
 
@@ -72,7 +72,7 @@ Web server listening at: http://localhost:3000
 Browse your REST API at http://localhost:3000/explorer
 ```
 
-Note that it says the port is 3000, which is mapped to the port `3019` on the host machine. 
+Note that it says the port is 3000, which is mapped to the port `2019` on the host machine. 
 
 ### Server restart script
 

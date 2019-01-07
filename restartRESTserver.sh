@@ -23,8 +23,8 @@ sudo docker run \
 -v ~/.composer:/home/composer/.composer \
 --name hypervaultrest \
 --network composer_default \
--p 3019:3000 \
+-p 2019:3000 \
 hypervault/rest-server
 
-echo "Server should now be listening on port 3019"
+echo "Server should now be listening on port 2019"
 echo "Run 'sudo docker logs hypervaultrest' to see the logs. "
