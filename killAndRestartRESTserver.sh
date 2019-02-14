@@ -26,5 +26,6 @@ docker run \
 -p 2019:3000 \
 hypervault/rest-server
 
-echo "Server should now be listening on port 2019"
+echo "Server should now be listening on localhost at port 2019"
 echo "Run 'docker logs hypervaultrest' to see the logs. "
+
