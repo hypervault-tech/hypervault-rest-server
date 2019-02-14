@@ -29,3 +29,9 @@ hypervault/rest-server
 echo "Server should now be listening on localhost at port 2019"
 echo "Run 'docker logs hypervaultrest' to see the logs. "
 
+echo 
+echo '---------------------------------------'
+echo "Setting up reverse proxy to map composer.hypervault.tech --> localhost:2019"
+echo '---------------------------------------'
+sudo cp ./composer.hypervault.tech.conf /etc/nginx/conf.d/composer.hypervault.tech.conf
+sudo systemctl restart nginx
