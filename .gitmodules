@@ -1,0 +1,3 @@
+[submodule "composer-rest-server"]
+	path = composer-rest-server
+	url = https://github.com/lixiii/composer-rest-server.git
