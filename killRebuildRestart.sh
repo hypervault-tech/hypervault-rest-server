@@ -8,8 +8,12 @@ docker rm hypervaultrest
 
 docker run -d --name mongo --network composer_default -p 27017:27017 mongo
 
-echo "Building the docker container"
+echo "Building hypervault/composer-rest-server-fork"
+source ./composer-rest-server/docker/build.sh
+
+echo "Building the hypervault/rest-server image"
 docker build -t hypervault/rest-server .
+
 source .env
 
 docker run \
