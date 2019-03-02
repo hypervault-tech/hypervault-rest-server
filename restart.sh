@@ -1,11 +1,20 @@
 #!/usr/bin/env bash
 
+if [[ $1 == all ]]; then
+    echo '---------------------------------------'
+    echo "Restarting all containers, including the Mongo storage containers"
+    echo '---------------------------------------'
+    docker kill mongo
+    docker start mongo
+fi
 
-docker kill mongo
+echo '---------------------------------------'
+echo "Restarting hypervaultrest container. Mongo container is preserved. "
+echo "To kill and restart it, run ./restart.sh all"
+echo '---------------------------------------'
+
 docker kill hypervaultrest
 docker rm hypervaultrest
-
-docker start mongo
 
 source .env
 
